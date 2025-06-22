@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form action="">
+        <label for="FirstName">First Name : </label>
+        <input type="text" id="FirstName" name="First Name" placeholder=""><br>
+        <label for="LastName">Last Name : </label>
+        <input type="text" id="LastName" name="Last Name" placeholder=""><br>
+        <label for="dateOfBirth">Date of Birth : </label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" laceholder="YYYY-MM-DD"><br>
+        <label for="Age">Age : </label>
+        <input type="number" id="Age" name="Age" placeholder=""><br>
+
+        <label for="Email">Email id : </label>
+        <input type="email"id="Email" name="Email"placeholder=""><br>
+        <label for="Mobile">Mobile Number : </label>
+        <input type="tel" id="Mobile" name="Mobile"placeholder=""><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+
+    </form> <hr>
+
+
+    <form action="">
+
+        <div>
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" required>
+      
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" required>
+        </div>
+      
+        <div>
+          <label for="dob">Date of birth:</label>
+          <input type="date" name="dob" id="dob" required>
+      
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="1" max="100" required>
+        </div>
+      
+        <div>
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+      
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" placeholder="Enter email address" required>
+        </div>
+      
+        <div>
+          <label>Positions Available:</label><br>
+          <input type="radio" name="positions" id="junior" value="Junior Developer">
+          <label for="junior">Junior Developer</label>
+      
+          <input type="radio" name="positions" id="mid" value="Mid-level Developer">
+          <label for="mid">Mid-level Developer</label>
+      
+          <input type="radio" name="positions" id="senior" value="Senior Developer">
+          <label for="senior">Senior Developer</label>
+        </div>
+      
+        <div>
+          <label>Programming Languages:</label><br>
+          <input type="checkbox" name="languages" id="java" value="Java">
+          <label for="java">Java</label>
+      
+          <input type="checkbox" name="languages" id="js" value="JavaScript">
+          <label for="js">JavaScript</label>
+      
+          <input type="checkbox" name="languages" id="python" value="Python">
+          <label for="python">Python</label>
+        </div>
+      
+        <div>
+          <label for="pword">Password:</label>
+          <input type="password" name="pword" id="pword" required>
+      
+          <label for="cpword">Confirm Password:</label>
+          <input type="password" name="cpword" id="cpword" required>
+        </div>
+      
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="reset">Reset</button>
+      </form>
+      
+</body>
+</html>

@@ -1,0 +1,35 @@
+div.example {
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+.example h2:not(.Any){
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.example span {
+    border: 2px solid green;
+    margin: 10px;
+    display: inline-block;
+}
+
+div.block {
+    border: 2px solid rgb(12, 133, 58);
+    margin: 10px;
+}
+
+.block ol {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+div.inline {
+    border: 2px solid rgb(190, 35, 95);
+    margin: 10px;
+}
+
+.inline ol {
+    border: 2px solid black;
+    margin: 10px;
+}
