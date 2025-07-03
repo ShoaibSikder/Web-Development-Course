@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* class selector */
+        div.class1{
+            color: blue;
+            background-color: lightgray;
+        }
+
+        /* id selector */
+        div#id1{
+            color: green;
+            background-color: lightblue;
+        }
+
+        /* child selector */
+        div.class2 >p{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* descendant selector */
+        div p{
+            color:purple ;
+            background-color: lightgreen;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:active{
+            background-color: blue;
+        }
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="class1">
+        i am a class selector
+    </div>
+
+    <div id="id1">
+        i ama a id selector
+
+    </div>
+
+    <div class="class2">
+        <p>this is called child selector</p>
+    </div>
+
+    <div>
+        <article>
+            <p>this is a Descendant selector example</p>
+        </article>
+    </div>
+
+    <div>
+        <a href="https://www.google.com">google</a>
+    </div>
+</body>
+</html>
