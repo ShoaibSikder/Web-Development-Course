@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poopins",sans-serif;
+}
+
+
+:root {
+    --bg-color: #080808;
+    --second-big-color: #131313;
+    --text-color: white;
+    --main-color: #00f2ff;
+}
+
+
+html{
+    font-size: 50%;
+}
+
+body{
+    background: var(--bg-color) ;
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+
+ /* header section */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10% 2rem;
+    background: var(--bg-color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+}
+
+/* home section */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home img{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.home-content h2{
+    font-size: 5rem;
+    font-weight: 1000;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+    color: var(--main-color);
+}
+.home-content h2:hover{
+    color: white;
+}
+.home-content p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+/* video */
+.video{
+    background: var(--second-big-color);
+    padding: 5rem 0;
+}
+
+.video h2{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: var(--main-color);
+
+}
+
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 2rem;
+}
+.video-box{
+    background: var(--bg-color);
+    border: 3px solid rgba(237,238,238, 0.2);
+    border-radius: 2rem;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s ease-in-out;
+}
+
+.video-box video.tour-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--main-color);
+}
+
+.video-info h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.video-info p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* audio */
+/* audio */
+.audio {
+    background: var(--bg-color);
+    padding: 5rem 0;
+}
+
+.audio h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: var(--main-color);
+}
+
+.audio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 2rem;
+}
+
+.audio-box {
+    background: var(--bg-color);
+    border: 3px solid rgba(237, 238, 238, 0.2);
+    border-radius: 2rem;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s ease-in-out;
+}
+.audio-box img.audio-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.audio-box audio {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    outline: none;
+}
+
+.audio-info h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--second-big-color);
+    display: flex;
+    flex-direction: column; /* Ensures items stack vertically first */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    display: inline-flex;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-5px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+
+.footer-iconTop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: .5s ease;
+    position: absolute; /* Position it absolutely */
+    right: 20px; /* Adjust to the right */
+    bottom: 20px; /* Adjust to the bottom */
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-big-color);
+}
